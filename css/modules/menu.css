@@ -25,6 +25,7 @@
   position: relative;
   color: var(--primary-text-color);
   font-weight: 700;
+  font-family: var(--primary-font-family);
   text-decoration: none;
   transition: color 0.25s;
 }
@@ -62,8 +63,16 @@
 }
 
 .menu-icon {
-  color: var(--primary-text-color);
+  --transform-value: 0deg;
+  color: var(--reverse-primary-text-color);
   font-size: 1.75rem;
+  display: flex;
+  transform: rotate(var(--transform-value));
+  transition: transform .25s;
+}
+
+.menu-icon--rotated {
+  --transform-value: 180deg;
 }
 
 .menu-checkbox {
