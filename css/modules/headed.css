@@ -18,6 +18,10 @@
   height: 80px;
 }
 
+.footer {
+  background-color: var(--primary-highlight-dark-color);
+}
+
 .footer__title {
   position: relative;
   font-size: 0.75rem;
@@ -35,7 +39,7 @@
 }
 
 .footer__link {
-  color: var(--primary-highlight-color);
+  color: var(--primary-shadow-color);
   text-decoration: none;
 }
 
