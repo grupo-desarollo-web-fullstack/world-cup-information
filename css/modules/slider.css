@@ -3,12 +3,11 @@
     max-width: 900px;
     margin: auto;
     overflow: hidden;
-    box-shadow: 0 0 0 5px #fff,
-                0 15px 50px;
     position: relative;
+    box-shadow: 0 0 0 3px #8d1c3d,
+                0 15px 50px;
     margin-bottom: 4rem;
 }
-
 .slider {
     display: flex;
     width: 400%; /*esto se modifica*/
@@ -48,6 +47,7 @@
 
 .slider__button:hover {
     background-color: #fff;
+    color: #8d1c3d;
 }
 
 .slider__button--right {
