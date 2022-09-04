@@ -29,7 +29,10 @@
   gap: 1.5rem;
 }
 
-.conatiner--
+.container__logo-mundial {
+  border-radius: 30%;
+
+}
 
 .container--hero {
   z-index: 5;

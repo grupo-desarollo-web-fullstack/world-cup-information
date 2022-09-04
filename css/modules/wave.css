@@ -10,5 +10,5 @@
 
 .wave__wave {
   display: block;
-  fill: var(--secondary-theme-color);
+  fill: var(--primary-highlight-color);
 }
