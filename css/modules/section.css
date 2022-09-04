@@ -31,17 +31,25 @@
 
 .container--hero {
   z-index: 5;
-  display: grid;
-  justify-items: center;
-  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--reverse-primary-text-color);
+  gap: 2rem 0;
 }
 
+@media (min-width: 768px) {
+  .container--hero {
+    flex-direction: row;
+  }
+}
 .section__title {
   margin: 0;
   font-size: 1.5rem;
   text-align: center;
   text-shadow: 0 0 0.25rem var(--primary-highlight-color);
 }
+
 
 .section__cards {
   display: flex;

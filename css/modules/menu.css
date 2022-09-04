@@ -69,6 +69,7 @@
   display: flex;
   transform: rotate(var(--transform-value));
   transition: transform .25s;
+  cursor: pointer;
 }
 
 .menu-icon--rotated {
@@ -85,14 +86,14 @@
 
 @media (min-width: 768px) {
 
+  .menu__link {
+    color: var(--reverse-primary-text-color);
+  }
+
   .menu__link:hover,
   .menu__link--active {
     color: var(--primary-highlight-color);
     font-weight: bold;
-  }
-
-  .menu__link {
-    color: var(--reverse-primary-text-color);
   }
 
   .menu-icon {
