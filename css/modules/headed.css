@@ -13,8 +13,9 @@
 
 .nav__link-logo {
   display: block;
-  width: 108px;
-  height: 108px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
 }
 
 .footer__title {
