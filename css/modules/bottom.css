@@ -10,7 +10,13 @@
     padding: 0.25em 1em;
     box-sizing: border-box;
     cursor: pointer;
+    transition: filter 0.25s, box-shadow 0.25s;
   }
+
+  .button--primary {
+  background-color: var(--primary-highlight-dark-color);
+  border: 0.125rem solid var(--primary-highlight-dark-color);
+}
 
   .form__input {
     border-style:groove;
@@ -18,6 +24,7 @@
     border-radius: var(--primary-border-radius);
     cursor: pointer;
   }
+
 
   
   
