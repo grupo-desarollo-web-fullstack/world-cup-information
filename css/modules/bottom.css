@@ -1,0 +1,25 @@
+.button {
+    display: inline-block;
+    background-color: #0c0b0b57;
+    border: 0.0625rem solid var(--primary-highlight-dark-color);
+    border-radius: var(--primary-border-radius);
+    color: white;
+    font-size: 1rem;
+    font-family: var(--primary-font-family);
+    text-decoration: none;
+    padding: 0.25em 1em;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .form__input {
+    border-style:groove;
+    border-color: var(--primary-highlight-dark-color);
+    border-radius: var(--primary-border-radius);
+    cursor: pointer;
+  }
+
+  
+  
+  
+ 
