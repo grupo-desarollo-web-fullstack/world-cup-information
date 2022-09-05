@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
-  gap: 4rem 0;
+  gap: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -13,7 +13,7 @@
 }
 
 .fg-card {
-  width: 80%;
+  width: 100%;
   height: 90%;
   display: flex;
   border-radius: 0 0 1.5625rem 1.5625rem;
@@ -64,7 +64,7 @@
 }
 
 .fg-card__team {
-  width: 70%;
+  width: 80%; 
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -73,6 +73,12 @@
   padding: .5rem;
   box-sizing: border-box;
   background-color: var(--secondary-theme-color);
+  opacity: .9;
+  transition: opacity .25s;
+}
+
+.fg-card__team:hover {
+  opacity: 1;
 }
 
 .fg-card__team-img__container {
