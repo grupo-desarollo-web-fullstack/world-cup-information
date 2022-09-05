@@ -1,5 +1,9 @@
 .fade-in {
-  animation: fadeIn .25s 1;
+  animation: fadeIn .5s 1;
+}
+
+.fade-in-delay-25 {
+  animation: fadeIn .5s .25s 1;
 }
 
 .appear {

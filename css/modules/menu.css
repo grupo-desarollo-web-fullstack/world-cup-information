@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  background-image: linear-gradient(var(--primary-theme-color), var(--secondary-theme-color));
+  background-color: var(--primary-theme-color);
   transition: left 0.25s;
 }
 
@@ -105,7 +105,7 @@
     flex-direction: row;
     gap: 1rem;
     width: auto;
-    background-image: none;
+    background-color: transparent;
   }
 
   .menu__img {
