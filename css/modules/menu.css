@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  background-image: linear-gradient(var(--primary-theme-color), var(--secondary-theme-color));
+  background-color: var(--primary-theme-color);
   transition: left 0.25s;
 }
 
@@ -69,6 +69,7 @@
   display: flex;
   transform: rotate(var(--transform-value));
   transition: transform .25s;
+  cursor: pointer;
 }
 
 .menu-icon--rotated {
@@ -85,14 +86,14 @@
 
 @media (min-width: 768px) {
 
+  .menu__link {
+    color: var(--reverse-primary-text-color);
+  }
+
   .menu__link:hover,
   .menu__link--active {
     color: var(--primary-highlight-color);
     font-weight: bold;
-  }
-
-  .menu__link {
-    color: var(--reverse-primary-text-color);
   }
 
   .menu-icon {
@@ -104,7 +105,7 @@
     flex-direction: row;
     gap: 1rem;
     width: auto;
-    background-image: none;
+    background-color: transparent;
   }
 
   .menu__img {

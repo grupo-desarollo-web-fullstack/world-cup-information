@@ -1,7 +1,7 @@
 const sliderJS = () => {
   const slider = document.querySelector("#slider");
-  let sliderSection = document.querySelectorAll(".slider__section");
-  let sliderSectionLast = sliderSection[sliderSection.length - 1];
+  let sliderSection = [...document.querySelectorAll(".slider__section")];
+  let sliderSectionLast = sliderSection.at(-1);
 
   const buttonLeft = document.querySelector("#button-left");
   const buttonRight = document.querySelector("#button-right");
@@ -9,10 +9,10 @@ const sliderJS = () => {
   slider.insertAdjacentElement("afterbegin", sliderSectionLast);
 
   function next() {
-    let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
+    let sliderSectionFirst = [...document.querySelectorAll(".slider__section")].at(0);
     slider.style.marginLeft = "-200%";
     slider.style.transition = "all 0.5s";
-    setTimeout(function () {
+    setTimeout(() => {
       slider.style.transition = "none";
       slider.insertAdjacentElement("beforeend", sliderSectionFirst);
       slider.style.marginLeft = "-100%";
@@ -20,26 +20,26 @@ const sliderJS = () => {
   }
 
   function prev() {
-    let sliderSection = document.querySelectorAll(".slider__section");
-    let sliderSectionLast = sliderSection[sliderSection.length - 1];
+    let sliderSection = [...document.querySelectorAll(".slider__section")];
+    let sliderSectionLast = sliderSection.at(-1);
     slider.style.marginLeft = "0";
     slider.style.transition = "all 0.5s";
-    setTimeout(function () {
+    setTimeout(() => {
       slider.style.transition = "none";
       slider.insertAdjacentElement("afterbegin", sliderSectionLast);
       slider.style.marginLeft = "-100%";
     }, 500);
   }
 
-  buttonRight.addEventListener("click", function () {
+  buttonRight.addEventListener("click", () => {
     next();
   });
 
-  buttonLeft.addEventListener("click", function () {
+  buttonLeft.addEventListener("click", () => {
     prev();
   });
 
-  setInterval(function () {
+  setInterval(() => {
     next();
   }, 5000);
 };

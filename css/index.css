@@ -1,7 +1,7 @@
 :root {
   scroll-behavior: smooth;
   --primary-theme-color: #eee;
-  --secondary-theme-color: #eee;
+  --secondary-theme-color: #D9D9D922;
   --primary-text-color: #000;
   /* --secondary-text-color: #eee; */
   --reverse-primary-text-color: white;
@@ -12,6 +12,7 @@
   --primary-highlight-color: #9bd9cc;
   --primary-highlight-dark-color: #63a194;
   --secondary-highlight-color: #e1c396;
+  --secondary-highlight-light-color: #e1c39644;
   --primary-button-color: #61dafb;
 
   --secondary-button-color: gold;
@@ -24,7 +25,7 @@
 }
 
 .body {
-  background-color: var(--primary-theme-color);
+  background-color: var(--secondary-highlight-light-color);
   color: var(--primary-text-color);
   font-family: var(--primary-font-family);
   margin: 0;
