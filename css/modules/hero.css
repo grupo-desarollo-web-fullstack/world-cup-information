@@ -34,6 +34,7 @@
 
 @media (min-width: 768px) {
   .hero__title {
+    text-align: end;
     font-size: 4rem;
   }
 }
