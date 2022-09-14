@@ -70,6 +70,8 @@
   transform: rotate(var(--transform-value));
   transition: transform .25s;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .menu-icon--rotated {
@@ -80,7 +82,7 @@
   display: none;
 }
 
-.menu-checkbox:checked+.menu--hamburger {
+.menu--hamburger-open {
   left: 0;
 }
 
