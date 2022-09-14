@@ -43,6 +43,31 @@
   cursor: pointer;
 }
 
+.button-info {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button-info__link {
+  padding: 0.25rem;
+  color: #8d1c3d;
+  background-color: transparent;
+  border: 3px inset white;
+  font-size: 22px;
+  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+  cursor: pointer;
+  opacity: 0.9;
+  font-weight: 1000;
+}
+
+.button-info__link:hover {
+  background-color: #8d1c3d;
+  color: #fff;
+  border-radius: 30rem;
+}
+
 .slider__button:hover {
   background-color: #fff;
   color: #8d1c3d;
@@ -56,6 +81,8 @@
   left: 10px;
 }
 
+
+
 @media (min-width: 768px) {
   .container--slider {
       width: 95%;
@@ -63,5 +90,12 @@
   }
   .slider {
       height: 520px;
+  }
+
+  .button-info__link {
+    color: #8d1c3d;
+    opacity: 1;
+    font-size: 33px;
+    font-weight: bold;
   }
 }
