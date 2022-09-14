@@ -9,6 +9,7 @@
               0 15px 25px rgb(170, 170, 170);
   margin-bottom: 4rem;
 }
+
 .slider {
   display: flex;
   width: 400%; /*esto se modifica*/
@@ -35,37 +36,77 @@
   background: rgba(255, 255, 255, 0.7);
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 30px;
   font-family: monospace;
   font-weight: bold;
   text-align: center;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color .25s, color .25s;
 }
 
 .button-info {
   position: absolute;
-  top: 87%;
+  top: 80%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.button-info__link {
-  padding: 0.25rem;
-  color: #8d1c3d;
-  background-color: transparent;
-  border: 3px inset white;
-  font-size: 22px;
-  transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
-  cursor: pointer;
-  opacity: 0.9;
-  font-weight: 1000;
+@media (min-width: 768px) {
+  .button-info {
+    top: 85%;
+  }
 }
 
-.button-info__link:hover {
-  background-color: #8d1c3d;
+.button-info__link-container {
+  text-decoration: none;
+}
+.button-info__link {
+  white-space: nowrap;
+  border-radius: .3rem;
+  border: none;
+  display: block;
+  border-right: 4px solid;
+  cursor: pointer;
+  line-height: 3rem;
   color: #fff;
-  border-radius: 30rem;
+  background-color: #8d1c3d;
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: transform .25s;
+  overflow: hidden;
+  width: 9ch;
+  animation: typing 2s 1 steps(9), blink 0.5s 5 step-end alternate, removeBorder 0.25s 1;
+}
+
+@media (min-width: 768px) {
+  .button-info__link {
+    font-size: 1.7rem;
+  }
+}
+@keyframes typing  {
+  from { 
+    width: 0;
+  }
+}
+
+@keyframes blink  {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes removeBorder {
+  to {
+    border-right: 0px solid;
+  }
+}
+
+.button-info__link:active {
+  transform: scale(.95);
 }
 
 .slider__button:hover {
@@ -81,7 +122,9 @@
   left: 10px;
 }
 
-
+.slider__button-icon {
+  font-size: 1.2rem;
+}
 
 @media (min-width: 768px) {
   .container--slider {
@@ -92,10 +135,4 @@
       height: 520px;
   }
 
-  .button-info__link {
-    color: #8d1c3d;
-    opacity: 1;
-    font-size: 33px;
-    font-weight: bold;
-  }
 }
