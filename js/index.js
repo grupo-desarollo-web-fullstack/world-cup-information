@@ -1,11 +1,11 @@
 'use-strict'
 
 import header from "./modules/header.js";
-import sliderJS from "./modules/slider.js";
+import slider from "./modules/slider.js";
 
-const readyDocument = () => {
+const documentReady = () => {
   header();
-  sliderJS();
+  slider();
 };
 
-document.addEventListener('DOMContentLoaded', readyDocument);
+document.addEventListener('DOMContentLoaded', documentReady);
