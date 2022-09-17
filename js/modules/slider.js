@@ -56,4 +56,6 @@ const sliderJS = () => {
   startInterval();
 };
 
+
+
 export default sliderJS;

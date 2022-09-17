@@ -1,5 +1,6 @@
 const header = () => {
   const menuIcon = document.getElementById('menuIcon');
+
   const menuHeader = document.getElementById('menuHeader');
   const animateIcon = () => menuIcon.classList.toggle('menu-icon--rotated');
   const openMenu = () => {
