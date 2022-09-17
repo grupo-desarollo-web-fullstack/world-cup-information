@@ -2,13 +2,14 @@ const sliderJS = () => {
   const slider = document.querySelector("#slider");
   let sliderSection = [...document.querySelectorAll(".slider__section")];
   let sliderSectionLast = sliderSection.at(-1);
+  let idInterval = null;
 
   const buttonLeft = document.querySelector("#button-left");
   const buttonRight = document.querySelector("#button-right");
 
   slider.insertAdjacentElement("afterbegin", sliderSectionLast);
 
-  function next() {
+  const next = () => {
     let sliderSectionFirst = [...document.querySelectorAll(".slider__section")].at(0);
     slider.style.marginLeft = "-200%";
     slider.style.transition = "all 0.5s";
@@ -19,7 +20,7 @@ const sliderJS = () => {
     }, 500);
   }
 
-  function prev() {
+  const prev = () => {
     let sliderSection = [...document.querySelectorAll(".slider__section")];
     let sliderSectionLast = sliderSection.at(-1);
     slider.style.marginLeft = "0";
@@ -31,17 +32,28 @@ const sliderJS = () => {
     }, 500);
   }
 
+  const startInterval = () => {
+    idInterval = setInterval(next, 5000);
+  };
+
+  const resetInterval = () => {
+    if(idInterval) {
+      clearInterval(idInterval);
+      startInterval();
+    }
+  }
+
   buttonRight.addEventListener("click", () => {
     next();
+    resetInterval();
   });
-
+  
   buttonLeft.addEventListener("click", () => {
     prev();
+    resetInterval();
   });
 
-  setInterval(() => {
-    next();
-  }, 5000);
+  startInterval();
 };
 
 export default sliderJS;
