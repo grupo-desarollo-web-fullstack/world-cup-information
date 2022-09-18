@@ -82,6 +82,10 @@
   animation: typing 2s 1 steps(9), blink 0.5s 5 step-end alternate, removeBorder 0.25s 1;
 }
 
+.slider-theme {
+  background-color: #8d1c3d;
+}
+
 @media (min-width: 768px) {
   .button-info__link {
     font-size: 1.7rem;
