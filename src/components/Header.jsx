@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useMatch } from "react-router-dom";
 import { MdSportsSoccer } from "react-icons/md";
+import Logo from "../assets/img/logo.png";
 
 import "../styles/modules/headed.css";
 import "../styles/modules/menu.css";
@@ -17,7 +18,7 @@ const Header = () => {
         <div className="container-wci container--headed">
           <Link to={isRoot ? "#hero" : "/"}>
             <img
-              src="./assets/img/logo-2.png"
+              src={Logo}
               alt="Logo World Cup Information"
               width="32"
               height="32"

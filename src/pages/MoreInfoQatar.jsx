@@ -4,7 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import "../styles/modules/slider.css"
+import "../styles/modules/slider.css";
 
 const MoreInfoQatar = () => {
   return (
@@ -12,7 +12,7 @@ const MoreInfoQatar = () => {
       <Carousel>
         <Carousel.Item>
           <img
-            src="./src/assets/img/image1.jpg"
+            src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/image1.jpg"
             className="d-block w-100"
             alt="image1"
           />
@@ -20,14 +20,15 @@ const MoreInfoQatar = () => {
           <Carousel.Caption className="slider-theme bg-gradient opacity-100">
             <h3>Estadios a disputar</h3>
             <p>
-              En estos estadios se disputaran los partidos mas desafiantes del mundo, ¿Quien obtendra la copa?
+              En estos estadios se disputaran los partidos mas desafiantes del
+              mundo, ¿Quien obtendra la copa?
             </p>
           </Carousel.Caption>
         </Carousel.Item>
 
         <Carousel.Item>
           <img
-            src="./src/assets/img/image3.jpg"
+            src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/image3.jpg"
             className="d-block w-100"
             alt="image2"
           />
@@ -44,7 +45,7 @@ const MoreInfoQatar = () => {
       <section className="py-5">
         <Container>
           <Row>
-            <Col md={4} >
+            <Col md={4}>
               <Card bsPrefix="card m-3" bg="light">
                 <Card.Img
                   style={{ height: "15rem" }}
@@ -75,7 +76,7 @@ const MoreInfoQatar = () => {
                 <Card.Body>
                   <Card.Title as="h5">Mejores balones del mundial</Card.Title>
                   <Card.Text as="p">
-                  En esta seccion te contaremos sobre los mejores balones con
+                    En esta seccion te contaremos sobre los mejores balones con
                     los que se jugaron cada mundial
                   </Card.Text>
                   <Button as="a" variant="dark" href="#">
@@ -96,7 +97,7 @@ const MoreInfoQatar = () => {
                 <Card.Body>
                   <Card.Title as="h5">Los mas jovenes</Card.Title>
                   <Card.Text as="p">
-                  En esta seccion te contaremos sobre los jugadores mas
+                    En esta seccion te contaremos sobre los jugadores mas
                     jovenes que fueron al mundial
                   </Card.Text>
                   <Button as="a" variant="dark" href="#">
@@ -117,7 +118,7 @@ const MoreInfoQatar = () => {
                 <Card.Body>
                   <Card.Title as="h5">Mejores selecciones</Card.Title>
                   <Card.Text as="p">
-                  En esta seccion te hablaremos sobre las mejores selecciones
+                    En esta seccion te hablaremos sobre las mejores selecciones
                     de futbol que existen en el mundo
                   </Card.Text>
                   <Button as="a" variant="dark" href="#">
@@ -138,7 +139,7 @@ const MoreInfoQatar = () => {
                 <Card.Body>
                   <Card.Title as="h5">Los estadios mas modernos</Card.Title>
                   <Card.Text as="p">
-                  En esta seccion te hablaremos mas sobre los estadios donde
+                    En esta seccion te hablaremos mas sobre los estadios donde
                     se definira al unico ganador de este mundial
                   </Card.Text>
                   <Button as="a" variant="dark" href="#">
@@ -159,7 +160,7 @@ const MoreInfoQatar = () => {
                 <Card.Body>
                   <Card.Title as="h5">Mejores camisetas del mundo</Card.Title>
                   <Card.Text as="p">
-                  En esta seccion te hablaremos sobre las mejores camisetas
+                    En esta seccion te hablaremos sobre las mejores camisetas
                     del mundo, asi como tambien cual es su significado
                   </Card.Text>
                   <Button as="a" variant="dark" href="#">
@@ -169,7 +170,7 @@ const MoreInfoQatar = () => {
               </Card>
             </Col>
 
-            <Col md={4} >
+            <Col md={4}>
               <Card bsPrefix="card m-3" bg="light">
                 <Card.Img
                   style={{ height: "15rem" }}
@@ -180,7 +181,7 @@ const MoreInfoQatar = () => {
                 <Card.Body>
                   <Card.Title as="h5">Los favoritos</Card.Title>
                   <Card.Text as="p">
-                  En esta seccion te hablaremos sobre los mejores equipos que
+                    En esta seccion te hablaremos sobre los mejores equipos que
                     podrian obtener la copa del mundo este 2022
                   </Card.Text>
                   <Button as="a" variant="dark" href="#">
@@ -201,7 +202,7 @@ const MoreInfoQatar = () => {
                 <Card.Body>
                   <Card.Title as="h5">Mas sobre Qatar</Card.Title>
                   <Card.Text as="p">
-                  En esta seccion te hablaremos mas sobre como poder viajar a
+                    En esta seccion te hablaremos mas sobre como poder viajar a
                     Qatar y sus reglamentos
                   </Card.Text>
                   <Button as="a" variant="dark" href="#">
@@ -210,7 +211,6 @@ const MoreInfoQatar = () => {
                 </Card.Body>
               </Card>
             </Col>
-
           </Row>
         </Container>
       </section>

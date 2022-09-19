@@ -11,33 +11,48 @@ const Carrusel = () => {
       <div className="container-wci container--slider">
         <Swiper className="slider" loop={true}>
           <SwiperSlide className="slider__section">
-            <img src="./assets/img/slider/Image1.jpg" alt="image1" className="slider__img"/>
+            <img
+              src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/slider/Image1.jpg"
+              alt="image1"
+              className="slider__img"
+            />
           </SwiperSlide>
           <div className="button-info">
-                <Link to="/more-info-qatar" className="button-info__link-container">
-                <button type="button" className="button-info__link">
-                    ¡Ver Más!
-                </button>
-                </Link>
+            <Link to="/more-info-qatar" className="button-info__link-container">
+              <button type="button" className="button-info__link">
+                ¡Ver Más!
+              </button>
+            </Link>
           </div>
           <SwiperSlide className="slider__section">
-            <img src="./assets/img/slider/Image2.jpg" alt="image2" className="slider__img"/>
+            <img
+              src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/slider/Image2.jpg"
+              alt="image2"
+              className="slider__img"
+            />
           </SwiperSlide>
           <SwiperSlide className="slider__section">
-            <img src="./assets/img/slider/Image3.jpg" alt="image3" className="slider__img"/>
+            <img
+              src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/slider/Image3.jpg"
+              alt="image3"
+              className="slider__img"
+            />
           </SwiperSlide>
           <SwiperSlide className="slider__section">
-            <img src="./assets/img/slider/Image4.jpg" alt="image4" className="slider__img"/>
+            <img
+              src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/slider/Image4.jpg"
+              alt="image4"
+              className="slider__img"
+            />
           </SwiperSlide>
 
-          <ButtonCarrusel action={'next'}>
+          <ButtonCarrusel action={"next"}>
             <BsFillCaretRightFill />
           </ButtonCarrusel>
 
-          <ButtonCarrusel action={'prev'}>
-            <BsFillCaretLeftFill/>
+          <ButtonCarrusel action={"prev"}>
+            <BsFillCaretLeftFill />
           </ButtonCarrusel>
-
         </Swiper>
       </div>
     </section>
@@ -45,8 +60,6 @@ const Carrusel = () => {
 };
 
 export default Carrusel;
-
-
 
 // const sliderJS = () => {
 //     const slider = document.querySelector("#slider");
@@ -117,10 +130,6 @@ export default Carrusel;
 
 //                 </div>
 //             </div>
-
-            
-
-            
 
 //             </div>
 //         </section>

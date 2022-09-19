@@ -3,6 +3,7 @@ import "../styles/modules/animations.css";
 import "../styles/modules/fg.css";
 import "../styles/modules/wave.css";
 import Carrusel from "../components/Carrusel";
+import HeroImg from "../assets/img/catar-image-hero.png";
 
 const WorldCupInformation = () => {
   return (
@@ -24,7 +25,7 @@ const WorldCupInformation = () => {
                 className="appear hero__img"
                 width="150"
                 height="150"
-                src="./assets/img/catar-image-hero.png"
+                src={HeroImg}
                 alt="qatar-imagen"
               />
             </div>
@@ -46,7 +47,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoA/logo-catar.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoA/logo-catar.png"
                         alt="Qatar logo"
                         width="50"
                       />
@@ -64,7 +65,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoA/logo-ecuador.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoA/logo-ecuador.png"
                         alt="Ecuador logo"
                         width="50"
                       />
@@ -82,7 +83,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoA/logo-senegal.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoA/logo-senegal.png"
                         alt="Senegal logo"
                         width="50"
                       />
@@ -100,7 +101,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoA/logo-holanda.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoA/logo-holanda.png"
                         alt="Holanda logo"
                         width="50"
                       />
@@ -123,7 +124,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoB/logo-inglaterra.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoB/logo-inglaterra.png"
                         alt="Inglaterra logo"
                         width="50"
                       />
@@ -141,7 +142,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoB/logo-iran.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoB/logo-iran.png"
                         alt="Irán logo"
                         width="50"
                       />
@@ -159,7 +160,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoB/logo-usa.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoB/logo-usa.png"
                         alt="USA logo"
                         width="50"
                       />
@@ -177,7 +178,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoB/logo-gales.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoB/logo-gales.png"
                         alt="Gales logo"
                         width="50"
                       />
@@ -200,7 +201,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoC/logo-argentina.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoC/logo-argentina.png"
                         alt="Argentina logo"
                         width="50"
                       />
@@ -218,7 +219,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoC/logo-arabia-saudita.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoC/logo-arabia-saudita.png"
                         alt="Arabia Saudita logo"
                         width="50"
                       />
@@ -236,7 +237,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoC/logo-mexico.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoC/logo-mexico.png"
                         alt="México logo"
                         width="50"
                       />
@@ -254,7 +255,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoC/logo-polonia.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoC/logo-polonia.png"
                         alt="Polonia logo"
                         width="50"
                       />
@@ -277,7 +278,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoD/logo-francia.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoD/logo-francia.png"
                         alt="Francia logo"
                         width="50"
                       />
@@ -295,7 +296,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoD/logo-australia.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoD/logo-australia.png"
                         alt="Australia logo"
                         width="50"
                       />
@@ -313,7 +314,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoD/logo-dinamarca.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoD/logo-dinamarca.png"
                         alt="Dinamarca logo"
                         width="50"
                       />
@@ -331,7 +332,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoD/logo-tunez.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoD/logo-tunez.png"
                         alt="Túnez logo"
                         width="50"
                       />
@@ -354,7 +355,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoE/logo-españa.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoE/logo-españa.png"
                         alt="España logo"
                         width="50"
                       />
@@ -372,7 +373,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoE/logo-costa-rica.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoE/logo-costa-rica.png"
                         alt="Costa Rica logo"
                         width="50"
                       />
@@ -390,7 +391,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoE/logo-alemania.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoE/logo-alemania.png"
                         alt="Alemania logo"
                         width="50"
                       />
@@ -408,7 +409,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoE/logo-japon.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoE/logo-japon.png"
                         alt="Japón logo"
                         width="50"
                       />
@@ -431,7 +432,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoF/logo-belgica.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoF/logo-belgica.png"
                         alt="Bélgica logo"
                         width="50"
                       />
@@ -449,7 +450,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoF/logo-canada.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoF/logo-canada.png"
                         alt="Canadá logo"
                         width="50"
                       />
@@ -467,7 +468,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoF/logo-marruecos.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoF/logo-marruecos.png"
                         alt="Marruecos logo"
                         width="50"
                       />
@@ -485,7 +486,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoF/logo-croacia.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoF/logo-croacia.png"
                         alt="Croacia logo"
                         width="50"
                       />
@@ -508,7 +509,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoG/logo-brasil.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoG/logo-brasil.png"
                         alt="catar logo"
                         width="50"
                       />
@@ -526,7 +527,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoG/logo-serbia.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoG/logo-serbia.png"
                         alt="ecuador logo"
                         width="50"
                       />
@@ -544,7 +545,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoG/logo-suiza.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoG/logo-suiza.png"
                         alt="senegal logo"
                         width="50"
                       />
@@ -562,7 +563,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoG/logo-camerun.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoG/logo-camerun.png"
                         alt="holanda logo"
                         width="50"
                       />
@@ -585,7 +586,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoH/logo-portugal.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoH/logo-portugal.png"
                         alt="catar logo"
                         width="50"
                       />
@@ -603,7 +604,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoH/logo-ghana.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoH/logo-ghana.png"
                         alt="ecuador logo"
                         width="50"
                       />
@@ -621,7 +622,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoH/logo-uruguay.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoH/logo-uruguay.png"
                         alt="senegal logo"
                         width="50"
                       />
@@ -639,7 +640,7 @@ const WorldCupInformation = () => {
                     <div className="fg-card__team-img__container">
                       <img
                         className="fg-card__team-img"
-                        src="./assets/img/teams/grupoH/logo-corea-del-sur.png"
+                        src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/teams/grupoH/logo-corea-del-sur.png"
                         alt="holanda logo"
                         width="50"
                       />
@@ -654,8 +655,7 @@ const WorldCupInformation = () => {
           </div>
         </section>
 
-        <Carrusel/>
-
+        <Carrusel />
       </main>
       <figure className="wave">
         <svg
