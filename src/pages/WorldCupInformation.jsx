@@ -2,8 +2,7 @@ import "../styles/modules/hero.css";
 import "../styles/modules/animations.css";
 import "../styles/modules/fg.css";
 import "../styles/modules/wave.css";
-import Carrusel from "../components/carrusel";
-import "../styles/modules/slider.css";
+import Carrusel from "../components/Carrusel";
 
 const WorldCupInformation = () => {
   return (
@@ -654,7 +653,9 @@ const WorldCupInformation = () => {
             </div>
           </div>
         </section>
+
         <Carrusel/>
+
       </main>
       <figure className="wave">
         <svg
