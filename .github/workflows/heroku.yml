@@ -1,0 +1,17 @@
+name: Build and Deploy to Netlify
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Deploy to Heroku
+        uses: actions/checkout@v3
+        uses: AkhileshNS/heroku-deploy@v3.12.12
+        with:
+          heroku_app_name: "server-world-cup-information"
+          heroku_email: "adoa2705@gmail.com"
+          appdir: './src/server'
+    
