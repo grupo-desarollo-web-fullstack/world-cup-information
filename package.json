@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/grupo-desarollo-web-fullstack/world-cup-information#readme",
   "dependencies": {
-    "boostrap": "^2.0.0",
     "bootstrap": "^5.2.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
