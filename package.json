@@ -5,7 +5,8 @@
   "description": "World Cup Information es un proyecto donde podrás encontrar cada selección clasificada, pasando por los estadios hasta un simulador donde podrás tener a tu propio Campeón Mundial ⚽🌍.",
   "main": "index.js",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
