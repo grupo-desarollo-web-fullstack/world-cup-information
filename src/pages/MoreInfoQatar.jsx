@@ -6,16 +6,15 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "../styles/modules/slider.css";
 
+const getImage = (position) =>
+  new URL(`../assets/img/image${position}.jpg`, import.meta.url).href;
+
 const MoreInfoQatar = () => {
   return (
     <main>
       <Carousel>
         <Carousel.Item>
-          <img
-            src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/image1.jpg"
-            className="d-block w-100"
-            alt="image1"
-          />
+          <img src={getImage(1)} className="d-block w-100" alt="image1" />
 
           <Carousel.Caption className="slider-theme bg-gradient opacity-100">
             <h3>Estadios a disputar</h3>
@@ -27,11 +26,7 @@ const MoreInfoQatar = () => {
         </Carousel.Item>
 
         <Carousel.Item>
-          <img
-            src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/image3.jpg"
-            className="d-block w-100"
-            alt="image2"
-          />
+          <img src={getImage(3)} className="d-block w-100" alt="image2" />
           <Carousel.Caption className="slider-theme bg-gradient opacity-100">
             <h3>Jugadores Jovenes</h3>
             <p>

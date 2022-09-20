@@ -10,16 +10,22 @@
   box-shadow: 0 0 0.0625rem 0.0625rem var(--reverse-primary-shadow-color);
 }
 
+
+.container-wci {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding: var(--padding-container);
+}
+
 .section--slider {
   display: flex;
   flex-direction: column;
   gap: 2rem 0;
 }
 
-.container, .container-wci {
-  max-width: var(--max-width-container);
-  margin: 0 auto;
-  padding: var(--padding-container);
+.container--slider {
+  padding: 0;
+
 }
 
 .container__logo-mundial {

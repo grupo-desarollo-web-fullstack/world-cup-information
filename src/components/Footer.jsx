@@ -2,6 +2,9 @@ import { FaRegEnvelope } from "react-icons/fa";
 import FooterImg from "../assets/img/logotipo-world-cup-logo-en-qatar.jpg";
 import "../styles/modules/button.css";
 
+const getLogoSocialNetwork = (socialNetwork) =>
+  new URL(`../assets/svg/logo-${socialNetwork}.svg`, import.meta.url).href;
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -40,7 +43,7 @@ const Footer = () => {
             <li>
               <a href="https://www.youtube.com/">
                 <img
-                  src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/svg/logo-youtube.svg"
+                  src={getLogoSocialNetwork("youtube")}
                   alt="YouTube"
                   width="24"
                   height="24"
@@ -51,7 +54,7 @@ const Footer = () => {
             <li>
               <a href="https://www.instagram.com/">
                 <img
-                  src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/svg/logo-instagram.svg"
+                  src={getLogoSocialNetwork("instagram")}
                   alt="Instagram"
                   width="24"
                   height="24"
@@ -62,7 +65,7 @@ const Footer = () => {
             <li>
               <a href="https://es-la.facebook.com/">
                 <img
-                  src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/svg/logo-facebook.svg"
+                  src={getLogoSocialNetwork("facebook")}
                   alt="Facebook"
                   width="24"
                   height="24"

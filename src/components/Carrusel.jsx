@@ -3,16 +3,27 @@ import "swiper/css";
 import { Link } from "react-router-dom";
 import { BsFillCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
 import ButtonCarrusel from "./ButtonCarrusel";
+import { Autoplay } from "swiper";
+
+const getImageCarruselUrl = (position) =>
+  new URL(`../assets/img/slider/Image${position}.jpg`, import.meta.url).href;
 
 const Carrusel = () => {
   return (
     <section className="section section--slider">
       <h2 className="section__title">Más sobre Qatar 2022</h2>
       <div className="container-wci container--slider">
-        <Swiper className="slider" loop={true}>
+        <Swiper
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 5000,
+          }}
+          className="slider"
+          loop={true}
+        >
           <SwiperSlide className="slider__section">
             <img
-              src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/slider/Image1.jpg"
+              src={getImageCarruselUrl(1)}
               alt="image1"
               className="slider__img"
             />
@@ -26,21 +37,21 @@ const Carrusel = () => {
           </div>
           <SwiperSlide className="slider__section">
             <img
-              src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/slider/Image2.jpg"
+              src={getImageCarruselUrl(2)}
               alt="image2"
               className="slider__img"
             />
           </SwiperSlide>
           <SwiperSlide className="slider__section">
             <img
-              src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/slider/Image3.jpg"
+              src={getImageCarruselUrl(3)}
               alt="image3"
               className="slider__img"
             />
           </SwiperSlide>
           <SwiperSlide className="slider__section">
             <img
-              src="https://github.com/grupo-desarollo-web-fullstack/world-cup-information/src/assets/img/slider/Image4.jpg"
+              src={getImageCarruselUrl(4)}
               alt="image4"
               className="slider__img"
             />
