@@ -17,6 +17,10 @@
   padding: var(--padding-container);
 }
 
+.section-simulator--fg {
+  padding: 3rem 0;
+}
+
 .section--slider {
   display: flex;
   flex-direction: column;
