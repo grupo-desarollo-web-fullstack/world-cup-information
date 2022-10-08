@@ -10,6 +10,9 @@
   box-shadow: 0 0 0.0625rem 0.0625rem var(--reverse-primary-shadow-color);
 }
 
+.section--fg {
+  padding-bottom: 0;
+}
 
 .container-wci {
   max-width: var(--max-width-container);
@@ -70,13 +73,12 @@
   font-size: 1.5rem;
   text-align: center;
   text-shadow: 0 0 0.25rem 	#385f44;
-  padding-bottom: 1rem;
 }
 
 .container--fg {
   display: flex;
   flex-direction: column;
-  gap: 3rem 0;
+  gap: var(--padding-section);
 }
 
 .section__cards {

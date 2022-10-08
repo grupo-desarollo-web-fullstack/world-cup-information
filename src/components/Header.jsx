@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef } from "react";
 import { Link, useMatch } from "react-router-dom";
 import { MdSportsSoccer } from "react-icons/md";
 import Logo from "../assets/img/logo.png";
@@ -9,9 +9,16 @@ import "../styles/modules/section.css";
 
 const Header = () => {
   const isRoot = useMatch("/");
-  const [isOpen, setOpen] = useState(false);
-  const handleClickIcon = () => setOpen(!isOpen);
-  const handleClickClose = () => setOpen(false);
+  const buttonBallonSoccer = useRef();
+  const menu = useRef();
+  const handleClickIcon = () => {
+    buttonBallonSoccer.current.classList.toggle("menu-icon--rotated");
+    menu.current.classList.toggle("menu--hamburger-open");
+  };
+  const handleClickClose = () => {
+    buttonBallonSoccer.current.classList.remove("menu-icon--rotated");
+    menu.current.classList.remove("menu--hamburger-open");
+  };
   return (
     <header className="header section--headed">
       <nav className="nav">
@@ -27,17 +34,14 @@ const Header = () => {
           </Link>
 
           <button
+            ref={buttonBallonSoccer}
             onClick={handleClickIcon}
-            className={`menu-icon ${isOpen ? "menu-icon--rotated" : ""}`}
+            className="menu-icon"
           >
             <MdSportsSoccer size={40} />
           </button>
 
-          <ul
-            className={`menu menu--hamburger ${
-              isOpen ? "menu menu--hamburger-open" : ""
-            }`}
-          >
+          <ul ref={menu} className="menu menu--hamburger">
             <li>
               <Link onClick={handleClickClose} to="/#fg" className="menu__link">
                 Fase de Grupos
@@ -55,7 +59,7 @@ const Header = () => {
             <li>
               <Link
                 onClick={handleClickClose}
-                to="/simulator-r"
+                to="/simulator"
                 className="menu__link"
               >
                 Llegando hasta la final
